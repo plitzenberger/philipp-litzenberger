@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from "react-router";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { Route } from "./+types/root";
 import { Header } from "./components/header";
@@ -23,6 +24,25 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  {
+    rel: "icon",
+    href: "/icon-light-32x32.png",
+    media: "(prefers-color-scheme: light)",
+  },
+  {
+    rel: "icon",
+    href: "/icon-dark-32x32.png",
+    media: "(prefers-color-scheme: dark)",
+  },
+  {
+    rel: "icon",
+    href: "/icon.svg",
+    type: "image/svg+xml",
+  },
+  {
+    rel: "apple-touch-icon",
+    href: "/apple-icon.png",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -38,6 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <Analytics />
         <ScrollRestoration />
         <Scripts />
       </body>
