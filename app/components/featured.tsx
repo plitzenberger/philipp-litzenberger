@@ -1,9 +1,11 @@
 export function Featured() {
   return (
-    <section className="py-32 px-6 md:px-12 bg-secondary border-y-8 border-foreground">
+    <section className="py-32 px-6 md:px-12 bg-primary-background-bright border-y-8 border-primary-border-bright">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-xl uppercase tracking-[0.2em] text-foreground font-black mb-16">Featured Work</h2>
-        
+        <h2 className="text-xl uppercase tracking-[0.2em] text-primary-foreground font-black mb-16">
+          Featured Work
+        </h2>
+
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left card - larger, rotated */}
           <div className="md:row-span-2 transform md:rotate-3 hover:rotate-0 transition-transform duration-300 cursor-pointer">
@@ -14,7 +16,7 @@ export function Featured() {
               </div>
             </div>
           </div>
-          
+
           {/* Top right card */}
           <div className="transform md:-rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer">
             <div className="h-64 bg-foreground mb-4 border-4 border-accent flex items-end justify-start p-6">
@@ -24,10 +26,10 @@ export function Featured() {
               </div>
             </div>
           </div>
-          
+
           {/* Bottom right card */}
           <div className="transform md:rotate-1 hover:rotate-0 transition-transform duration-300 cursor-pointer">
-            <div className="h-64 bg-accent mb-4 border-4 border-foreground flex items-end justify-start p-6">
+            <div className="h-64 mb-4 border-4 border-foreground flex items-end justify-start p-6">
               <div className="text-accent-foreground">
                 <h3 className="text-2xl font-black">Infrastructure</h3>
                 <p className="text-xs font-bold">Elegant architecture</p>
@@ -37,5 +39,5 @@ export function Featured() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -27,7 +27,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={cycleTheme}
-      className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent-background-bright hover:text-accent-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (

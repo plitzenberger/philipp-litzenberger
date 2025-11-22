@@ -4,11 +4,17 @@
 @import "@radix-ui/colors/gray.css";
 @import "@radix-ui/colors/gray-dark.css";
 
-@import "@radix-ui/colors/indigo.css";
-@import "@radix-ui/colors/indigo-dark.css";
+@import "@radix-ui/colors/iris.css";
+@import "@radix-ui/colors/iris-dark.css";
 
-@import "@radix-ui/colors/Crimson.css";
-@import "@radix-ui/colors/Crimson-dark.css";
+@import "@radix-ui/colors/pink.css";
+@import "@radix-ui/colors/pink-dark.css";
+
+@import "@radix-ui/colors/crimson.css";
+@import "@radix-ui/colors/crimson-dark.css";
+
+@import "@radix-ui/colors/purple.css";
+@import "@radix-ui/colors/purple-dark.css";
 
 @import "@radix-ui/colors/blue.css";
 @import "@radix-ui/colors/blue-dark.css";
@@ -41,20 +47,75 @@ body {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Primary colors */
+  --color-primary-1: var(--iris-1);
+  --color-primary-2: var(--iris-2);
+  --color-primary-3: var(--iris-3);
+  --color-primary-4: var(--iris-4);
+  --color-primary-5: var(--iris-5);
+  --color-primary-6: var(--iris-6);
+  --color-primary-7: var(--iris-7);
+  --color-primary-8: var(--iris-8);
+  --color-primary-9: var(--iris-9);
+  --color-primary-10: var(--iris-10);
+  --color-primary-11: var(--iris-11);
+  --color-primary-12: var(--iris-12);
+
+  /* Primary semantic colors */
+  --color-primary-background: var(--color-primary-1);
+  --color-primary-background-bright: var(--color-primary-2);
+  --color-primary-interactive: var(--color-primary-3);
+  --color-primary-interactive-medium: var(--color-primary-4);
+  --color-primary-interactive-bright: var(--color-primary-5);
+  --color-primary-border: var(--color-primary-6);
+  --color-primary-border-medium: var(--color-primary-7);
+  --color-primary-border-bright: var(--color-primary-8);
+  --color-primary-solid: var(--color-primary-9);
+  --color-primary-solid-bright: var(--color-primary-10);
+  --color-primary-foreground: var(--color-primary-11);
+  --color-primary-foreground-bright: var(--color-primary-12);
+
+  /* Accent colors */
+  --color-accent-1: var(--purple-1);
+  --color-accent-2: var(--purple-2);
+  --color-accent-3: var(--purple-3);
+  --color-accent-4: var(--purple-4);
+  --color-accent-5: var(--purple-5);
+  --color-accent-6: var(--purple-6);
+  --color-accent-7: var(--purple-7);
+  --color-accent-8: var(--purple-8);
+  --color-accent-9: var(--purple-9);
+  --color-accent-10: var(--purple-10);
+  --color-accent-11: var(--purple-11);
+  --color-accent-12: var(--purple-12);
+
+  /* Accent semantic colors */
+  --color-accent-background: var(--color-accent-1);
+  --color-accent-background-bright: var(--color-accent-2);
+  --color-accent-interactive: var(--color-accent-3);
+  --color-accent-interactive-medium: var(--color-accent-4);
+  --color-accent-interactive-bright: var(--color-accent-5);
+  --color-accent-border: var(--color-accent-6);
+  --color-accent-border-medium: var(--color-accent-7);
+  --color-accent-border-bright: var(--color-accent-8);
+  --color-accent-solid: var(--color-accent-9);
+  --color-accent-solid-bright: var(--color-accent-10);
+  --color-accent-foreground: var(--color-accent-11);
+  --color-accent-foreground-bright: var(--color-accent-12);
+
+  /* Accent colors */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-border: var(--border);
   --color-input: var(--input);
@@ -76,48 +137,22 @@ body {
 
 :root {
   --radius: 0.625rem;
-  --background: var(--gray-1);
-  --foreground: var(--gray-12);
-  --card: var(--gray-2);
-  --card-foreground: var(--gray-12);
-  --popover: var(--gray-1);
-  --popover-foreground: var(--gray-12);
-  --primary: var(--indigo-12);
-  --primary-foreground: var(--gray-1);
-  --secondary: var(--crimson-4);
-  --secondary-foreground: var(--crimson-12);
-  --muted: var(--gray-4);
-  --muted-foreground: var(--gray-11);
-  --accent: var(--gray-4);
-  --accent-foreground: var(--crimson-12);
-  --destructive: var(--red-9);
-  --border: var(--gray-6);
-  --input: var(--gray-6);
-  --ring: var(--gray-8);
-  --chart-1: var(--blue-9);
-  --chart-2: var(--green-9);
-  --chart-3: var(--blue-9);
-  --chart-4: var(--green-9);
-  --chart-5: var(--red-9);
-  --sidebar: var(--gray-2);
-  --sidebar-foreground: var(--gray-12);
-  --sidebar-primary: var(--gray-12);
-  --sidebar-primary-foreground: var(--gray-1);
-  --sidebar-accent: var(--gray-4);
-  --sidebar-accent-foreground: var(--gray-12);
-  --sidebar-border: var(--gray-6);
-  --sidebar-ring: var(--gray-8);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-primary-border outline-primary-border-bright text-primary-foreground-bright;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-primary-background text-primary-foreground;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
