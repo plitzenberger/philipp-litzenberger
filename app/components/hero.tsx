@@ -6,7 +6,7 @@ export function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <span className="text-xs md:text-sm tracking-[0.3em] uppercase font-black text-accent">
-            [ Creative Engineer ]
+            [ Curious Engineer ]
           </span>
         </div>
 
@@ -16,18 +16,18 @@ export function Hero() {
               className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tighter text-balance"
               style={{ transform: "skewY(-2deg)" }}
             >
-              Breaking <span className="text-accent">Rules</span>
+              Stay <span className="text-accent">Curious</span>
             </h1>
             <h2 className="text-2xl md:text-4xl font-black mb-8 text-foreground/70">
-              Building innovative software solutions with creative rebellion
+              Learning by building and exploring unconventional ideas
             </h2>
           </div>
 
           <div className="border-l-8 border-accent pl-8">
             <p className="text-lg md:text-xl leading-relaxed font-bold mb-8">
-              I explore the intersection of engineering excellence, design
-              thinking, and unconventional approaches. Here I share thoughts on
-              technology, philosophy, and the future we're building.
+              I explore the edges and intersections of engineering excellence,
+              design thinking, and unconventional approaches. Here I share
+              thoughts on technology, philosophy, and the future we're building.
             </p>
             <div className="flex flex-col gap-4">
               <Link

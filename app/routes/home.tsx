@@ -8,11 +8,11 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Creative Engineer | Building Tomorrow's Solutions" },
+    { title: "Curious Engineer | Building Tomorrow's Solutions" },
     {
       name: "description",
       content:
-        "Creative engineer exploring technology, philosophy, and the intersection of innovation and practical problem-solving.",
+        "Curious Engineer exploring technology, philosophy, and the intersection of innovation and practical problem-solving.",
     },
     { name: "generator", content: "v0.app" },
   ];

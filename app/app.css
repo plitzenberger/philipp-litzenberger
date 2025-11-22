@@ -2,12 +2,21 @@
 @import "tw-animate-css";
 
 @import "@radix-ui/colors/gray.css";
-@import "@radix-ui/colors/blue.css";
-@import "@radix-ui/colors/green.css";
-@import "@radix-ui/colors/red.css";
 @import "@radix-ui/colors/gray-dark.css";
+
+@import "@radix-ui/colors/indigo.css";
+@import "@radix-ui/colors/indigo-dark.css";
+
+@import "@radix-ui/colors/Crimson.css";
+@import "@radix-ui/colors/Crimson-dark.css";
+
+@import "@radix-ui/colors/blue.css";
 @import "@radix-ui/colors/blue-dark.css";
+
+@import "@radix-ui/colors/green.css";
 @import "@radix-ui/colors/green-dark.css";
+
+@import "@radix-ui/colors/red.css";
 @import "@radix-ui/colors/red-dark.css";
 
 @custom-variant dark (&:is(.dark *));
@@ -73,14 +82,14 @@ body {
   --card-foreground: var(--gray-12);
   --popover: var(--gray-1);
   --popover-foreground: var(--gray-12);
-  --primary: var(--gray-12);
+  --primary: var(--indigo-12);
   --primary-foreground: var(--gray-1);
-  --secondary: var(--gray-4);
-  --secondary-foreground: var(--gray-12);
+  --secondary: var(--crimson-4);
+  --secondary-foreground: var(--crimson-12);
   --muted: var(--gray-4);
   --muted-foreground: var(--gray-11);
   --accent: var(--gray-4);
-  --accent-foreground: var(--gray-12);
+  --accent-foreground: var(--crimson-12);
   --destructive: var(--red-9);
   --border: var(--gray-6);
   --input: var(--gray-6);
@@ -107,4 +116,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
