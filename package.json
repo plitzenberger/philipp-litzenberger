@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "wrangler dev",
     "cf-typegen": "wrangler types",
     "deploy": "npm run build && wrangler deploy",
     "postinstall": "npm run cf-typegen",
