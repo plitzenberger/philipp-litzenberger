@@ -7,7 +7,6 @@ import {
   ScrollRestoration,
 } from "react-router";
 import { ThemeProvider } from "next-themes";
-import { Analytics } from "@vercel/analytics/react";
 
 import type { Route } from "./+types/root";
 import { Header } from "./components/header";
@@ -58,7 +57,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
-        <Analytics />
         <ScrollRestoration />
         <Scripts />
       </body>
