@@ -1,6 +1,7 @@
 import { Header } from "~/components/header";
 import { Hero } from "~/components/hero";
 import { Thoughts } from "~/components/thoughts";
+import { Projects } from "~/components/projects";
 import { Footer } from "~/components/footer";
 import type { Route } from "./+types/home";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Thoughts />
+      <Projects />
       <Footer />
     </main>
   );
