@@ -1,6 +1,5 @@
 import { Header } from "~/components/header";
 import { Hero } from "~/components/hero";
-import { Featured } from "~/components/featured";
 import { Thoughts } from "~/components/thoughts";
 import { Projects } from "~/components/projects";
 import { Footer } from "~/components/footer";
@@ -23,7 +22,6 @@ export default function Home() {
     <main className="min-h-screen bg-primary-background">
       <Header />
       <Hero />
-      <Featured />
       <Thoughts />
       <Projects />
       <Footer />
