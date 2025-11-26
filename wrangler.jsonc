@@ -14,12 +14,6 @@
 	"observability": {
 		"enabled": true
 	},
-	"routes": [
-		{
-			"pattern": "philipp-litzenberger.de/*",
-			"zone_name": "philipp-litzenberger.de"
-		}
-	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
