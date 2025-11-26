@@ -1,5 +1,6 @@
 import { Header } from "~/components/header";
 import { Hero } from "~/components/hero";
+import { Featured } from "~/components/featured";
 import { Thoughts } from "~/components/thoughts";
 import { Footer } from "~/components/footer";
 import type { Route } from "./+types/home";
@@ -21,6 +22,7 @@ export default function Home() {
     <main className="min-h-screen bg-primary-background">
       <Header />
       <Hero />
+      <Featured />
       <Thoughts />
       <Footer />
     </main>
