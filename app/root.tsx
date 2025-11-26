@@ -25,22 +25,36 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "icon",
-    href: "/icon-light-32x32.png",
+    type: "image/png",
+    href: "/favicon-96x96.png",
+    sizes: "96x96",
     media: "(prefers-color-scheme: light)",
   },
   {
     rel: "icon",
-    href: "/icon-dark-32x32.png",
+    type: "image/png",
+    href: "/favicon-96x96.png",
+    sizes: "96x96",
     media: "(prefers-color-scheme: dark)",
   },
   {
     rel: "icon",
-    href: "/icon.svg",
     type: "image/svg+xml",
+    href: "/favicon.svg",
   },
   {
+    rel: "shortcut icon",
+    href: "/favicon.ico",
+  },
+
+  {
     rel: "apple-touch-icon",
-    href: "/apple-icon.png",
+    href: "/apple-touch-icon.png",
+    sizes: "180x180",
+  },
+  {
+    rel: "manifest",
+    href: "/site.webmanifest",
   },
 ];
 
@@ -50,6 +64,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-title" content="Litzi" />
         <Meta />
         <Links />
       </head>
