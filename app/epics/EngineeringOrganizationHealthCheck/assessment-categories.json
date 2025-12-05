@@ -1,0 +1,152 @@
+{
+  "assessment_name": "Engineering Organization Health Check",
+  "target_audience": "CTOs, VPs of Engineering, Technical Founders at scale-ups (20-200 employees)",
+  "assessment_duration": "15-20 minutes",
+  "output_format": "Personalized PDF report with scoring + recommendations",
+  "core_categories": [
+    {
+      "id": 1,
+      "category_name": "Team Velocity & Delivery Performance",
+      "description": "Measures the team's ability to consistently ship quality features and respond to business needs",
+      "key_dimensions": [
+        "Sprint predictability and completion rates",
+        "Time from commit to production",
+        "Incident response and recovery time",
+        "Feature development cycle time",
+        "Release frequency and reliability"
+      ],
+      "healthy_score_indicators": "Regular, predictable releases with minimal rollbacks",
+      "risk_score_indicators": "Missed deadlines, extended development cycles, frequent hotfixes",
+      "business_impact": "Direct correlation to time-to-market and competitive advantage"
+    },
+    {
+      "id": 2,
+      "category_name": "Architecture & Technical Debt",
+      "description": "Evaluates the scalability, maintainability, and long-term sustainability of the technical foundation",
+      "key_dimensions": [
+        "Code maintainability and test coverage",
+        "System scalability and performance headroom",
+        "Technology stack modernity and support",
+        "Documentation quality and accessibility",
+        "Accumulated technical debt and remediation strategy"
+      ],
+      "healthy_score_indicators": "Well-documented, tested codebase with clear architecture patterns",
+      "risk_score_indicators": "Legacy systems, low test coverage, unclear architecture decisions",
+      "business_impact": "Affects development speed, system reliability, and future scalability costs"
+    },
+    {
+      "id": 3,
+      "category_name": "Engineering Culture & Team Health",
+      "description": "Assesses team morale, collaboration effectiveness, and organizational sustainability",
+      "key_dimensions": [
+        "Team turnover and retention rates",
+        "Knowledge sharing and documentation practices",
+        "Cross-functional collaboration quality",
+        "Innovation time and technical exploration",
+        "Psychological safety and feedback culture"
+      ],
+      "healthy_score_indicators": "Low turnover, high engagement, active knowledge sharing",
+      "risk_score_indicators": "High attrition, siloed teams, lack of mentorship",
+      "business_impact": "Directly affects recruiting costs, productivity, and institutional knowledge retention"
+    },
+    {
+      "id": 4,
+      "category_name": "DevOps & Infrastructure Maturity",
+      "description": "Evaluates automation, monitoring, and operational excellence capabilities",
+      "key_dimensions": [
+        "CI/CD pipeline maturity and automation level",
+        "Monitoring, alerting, and observability",
+        "Infrastructure as Code adoption",
+        "Security and compliance automation",
+        "Disaster recovery and business continuity readiness"
+      ],
+      "healthy_score_indicators": "Fully automated deployments, comprehensive monitoring, fast recovery",
+      "risk_score_indicators": "Manual deployments, reactive monitoring, unclear incident response",
+      "business_impact": "Affects system uptime, operational costs, and regulatory compliance"
+    },
+    {
+      "id": 5,
+      "category_name": "Technical Leadership & Decision-Making",
+      "description": "Assesses the quality and effectiveness of technical strategy and governance",
+      "key_dimensions": [
+        "Architecture decision documentation and communication",
+        "Technical roadmap alignment with business goals",
+        "Stakeholder communication effectiveness",
+        "Technology evaluation and adoption process",
+        "Engineering leadership capacity and succession planning"
+      ],
+      "healthy_score_indicators": "Clear technical vision, documented decisions, aligned with business strategy",
+      "risk_score_indicators": "Ad-hoc decisions, misalignment with business, single points of failure in leadership",
+      "business_impact": "Determines strategic execution capability and organizational scaling potential"
+    },
+    {
+      "id": 6,
+      "category_name": "Scaling & Growth Readiness",
+      "description": "Evaluates the organization's preparedness for team and system growth",
+      "key_dimensions": [
+        "Hiring and onboarding effectiveness",
+        "System capacity and performance scalability",
+        "Process scalability and documentation",
+        "Team structure and communication patterns",
+        "Financial efficiency (cost per feature, cloud spend optimization)"
+      ],
+      "healthy_score_indicators": "Efficient onboarding, scalable systems, clear processes",
+      "risk_score_indicators": "Slow hiring, performance bottlenecks, inefficient processes",
+      "business_impact": "Determines ability to capture market opportunities and scale efficiently"
+    },
+    {
+      "id": 7,
+      "category_name": "Innovation & Technical Excellence",
+      "description": "Measures the balance between feature delivery and technical investment",
+      "key_dimensions": [
+        "Investment in R&D and proof-of-concepts",
+        "Technology adoption and modernization pace",
+        "Code quality standards and enforcement",
+        "Technical learning and development programs",
+        "Balance between new features and technical improvements"
+      ],
+      "healthy_score_indicators": "Dedicated innovation time, continuous improvement, high code quality",
+      "risk_score_indicators": "Pure feature factory, outdated practices, no learning culture",
+      "business_impact": "Affects long-term competitiveness, ability to attract talent, and technical differentiation"
+    }
+  ],
+  "scoring_methodology": {
+    "individual_category_score": "0-100 points per category",
+    "overall_health_score": "Weighted average across all categories",
+    "maturity_levels": [
+      {
+        "level": "Critical Risk",
+        "score_range": "0-40",
+        "description": "Immediate intervention required"
+      },
+      {
+        "level": "Needs Improvement",
+        "score_range": "41-60",
+        "description": "Significant gaps present"
+      },
+      {
+        "level": "Developing",
+        "score_range": "61-75",
+        "description": "On the right track with room for optimization"
+      },
+      {
+        "level": "Strong",
+        "score_range": "76-90",
+        "description": "Well-positioned for scale"
+      },
+      {
+        "level": "Exceptional",
+        "score_range": "91-100",
+        "description": "Industry-leading practices"
+      }
+    ]
+  },
+  "report_deliverables": {
+    "executive_summary": "1-page overview with overall score and top 3 priorities",
+    "category_breakdown": "Detailed scoring for each of the 7 categories with benchmarks",
+    "risk_analysis": "Identification of critical gaps and their business impact",
+    "quick_wins": "3-5 actionable recommendations achievable in 30-90 days",
+    "strategic_roadmap": "12-month improvement plan outline",
+    "next_steps": "Clear CTA for strategy call to discuss implementation"
+  }
+}
