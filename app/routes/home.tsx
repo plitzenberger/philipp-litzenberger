@@ -164,8 +164,26 @@ function ValueProposition() {
       className="py-24 px-6 md:px-12 bg-primary-background-bright scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
+        {/* Profile image and intro - full width on mobile, side by side on larger screens */}
+        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start mb-16">
+          {/* Profile Image */}
+          <div className="lg:col-span-2 flex justify-center lg:justify-start">
+            <div className="relative group">
+              {/* Decorative background element */}
+              <div className="absolute -inset-3 bg-primary-interactive-bright opacity-30 rotate-3 transition-transform duration-300 group-hover:rotate-6" />
+              {/* Image container */}
+              <div className="relative border-4 border-primary-border-bright overflow-hidden transition-transform duration-300 group-hover:-rotate-1">
+                <img
+                  src="/profile-image.webp"
+                  alt="Philipp Litzenberger"
+                  className="w-full max-w-sm lg:max-w-none aspect-4/5 grayscale object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* About content */}
+          <div className="lg:col-span-3">
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-8 -skew-y-2">
               {t("valueProposition.title")}
               <br />
@@ -197,30 +215,31 @@ function ValueProposition() {
               ))}
             </div>
           </div>
+        </div>
 
-          <div className="space-y-6">
-            {items.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={idx}
-                  className="group flex gap-6 p-6 border-l-4 border-primary-border hover:border-accent-border-bright hover:bg-primary-interactive/50 transition-all duration-200"
-                >
-                  <div className="w-12 h-12 flex items-center justify-center border-2 border-primary-border-bright group-hover:border-accent-border-bright group-hover:scale-110 transition-all duration-200">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-black text-lg mb-2 group-hover:text-accent-foreground transition-colors">
-                      {t(item.titleKey)}
-                    </h3>
-                    <p className="text-primary-foreground/70 text-sm">
-                      {t(item.descriptionKey)}
-                    </p>
-                  </div>
+        {/* Value proposition items - full width grid */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {items.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="group flex gap-6 p-6 border-l-4 border-primary-border hover:border-accent-border-bright hover:bg-primary-interactive/50 transition-all duration-200"
+              >
+                <div className="w-12 h-12 flex items-center justify-center border-2 border-primary-border-bright group-hover:border-accent-border-bright group-hover:scale-110 transition-all duration-200 shrink-0">
+                  <Icon className="w-6 h-6" />
                 </div>
-              );
-            })}
-          </div>
+                <div>
+                  <h3 className="font-black text-lg mb-2 group-hover:text-accent-foreground transition-colors">
+                    {t(item.titleKey)}
+                  </h3>
+                  <p className="text-primary-foreground/70 text-sm">
+                    {t(item.descriptionKey)}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
