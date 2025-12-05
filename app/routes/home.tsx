@@ -3,6 +3,7 @@ import { Hero } from "~/components/hero";
 import { Thoughts } from "~/components/thoughts";
 import { Footer } from "~/components/footer";
 import type { Route } from "./+types/home";
+import { Main } from "~/components/main";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,11 +19,11 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-primary-background">
+    <Main>
       <Header />
       <Hero />
       <Thoughts />
       <Footer />
-    </main>
+    </Main>
   );
 }

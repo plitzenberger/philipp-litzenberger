@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { HeroTitle, HeroTitleAccent } from "./hero-title";
 
 export function Hero() {
   return (
@@ -6,9 +7,9 @@ export function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tighter text-balance -skew-y-2">
-              Just <span className="text-accent-foreground">Curious</span>
-            </h1>
+            <HeroTitle size="large" skew>
+              Just <HeroTitleAccent variant="accent">Curious</HeroTitleAccent>
+            </HeroTitle>
             <h2 className="text-2xl md:text-4xl font-black mb-8 text-foreground/70">
               Learning by building and exploring (un)conventional topics
             </h2>
