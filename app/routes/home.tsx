@@ -1,28 +1,44 @@
-import { Header } from "~/components/header";
-import { Hero } from "~/components/hero";
-import { Thoughts } from "~/components/thoughts";
 import { Footer } from "~/components/footer";
 import type { Route } from "./+types/home";
+import { Main } from "~/components/main";
+
+import { HeroSection } from "~/epics/home/HeroSection";
+import { ValueProposition } from "~/epics/home/ValueProposition";
+import { ServicesSection } from "~/epics/home/ServicesSection";
+import { TechExpertise } from "~/epics/home/TechExpertise";
+import { ExperienceHighlights } from "~/epics/home/ExperienceHighlights";
+import { ThoughtsPreview } from "~/epics/home/ThoughtsPreview";
+import { CTASection } from "~/epics/home/CTASection";
+
 
 export function meta({}: Route.MetaArgs) {
+  // Note: For SSR meta, we'd need to pass locale through loader
+  // For now, using English as default meta
   return [
-    { title: "Curious Engineer | Building Tomorrow's Solutions" },
+    {
+      title:
+        "Philipp Litzenberger | Lead Fullstack Engineer & Technical Consultant",
+    },
     {
       name: "description",
       content:
-        "Curious Engineer exploring technology, philosophy, and the intersection of innovation and practical problem-solving.",
+        "Senior Technical Leader with 10+ years building scalable systems. Specializing in fullstack development, team leadership, and engineering organization health.",
     },
-    { name: "generator", content: "v0.app" },
+    { name: "generator", content: "React Router" },
   ];
 }
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-primary-background">
-      <Header />
-      <Hero />
-      <Thoughts />
+    <Main>
+      <HeroSection />
+      <ValueProposition />
+      <ServicesSection />
+      <TechExpertise />
+      <ExperienceHighlights/>
+      <ThoughtsPreview />
+      <CTASection />
       <Footer />
-    </main>
+    </Main>
   );
 }

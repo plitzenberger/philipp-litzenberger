@@ -1,30 +1,25 @@
 import { Link } from "react-router";
+import { HeroTitle, HeroTitleAccent } from "./hero-title";
 
 export function Hero() {
   return (
-    <section id="about" className="pt-40 pb-24 px-6 md:px-12">
+    <section id="about" className="pt-49 pb-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
-          <span className="text-xs md:text-sm tracking-[0.3em] uppercase font-black text-accent-foreground">
-            [ Curious Engineer ]
-          </span>
-        </div>
-
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tighter text-balance -skew-y-2">
-              Stay <span className="text-accent-foreground">Curious</span>
-            </h1>
+            <HeroTitle size="large" skew>
+              Just <HeroTitleAccent variant="accent">Curious</HeroTitleAccent>
+            </HeroTitle>
             <h2 className="text-2xl md:text-4xl font-black mb-8 text-foreground/70">
-              Learning by building and exploring (un)conventional ideas
+              Learning by building and exploring (un)conventional topics
             </h2>
           </div>
 
           <div className="border-l-8 border-primary-border-bright pl-8">
             <p className="text-lg md:text-xl leading-relaxed font-bold mb-8">
-              I explore the edges and intersections of engineering excellence,
-              design thinking, and (un)conventional approaches. Here I share
-              thoughts on technology, philosophy, and the future we're building.
+              Synthesis of Ethics, Tech Impact Assessment, Design-Thinking, and
+              Engineering. Focused on critical thought and responsible decisions
+              in future creation.
             </p>
             <div className="flex flex-col gap-4">
               <Link

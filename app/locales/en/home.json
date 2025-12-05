@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Philipp Litzenberger | Lead Fullstack Engineer & Technical Consultant",
+    "description": "Senior Technical Leader with 10+ years building scalable systems. Specializing in fullstack development, team leadership, and engineering organization health."
+  },
+  "hero": {
+    "badge": "Available for Consulting",
+    "firstName": "Philipp",
+    "lastName": "Litzenberger",
+    "subtitle": "Lead Fullstack Engineer & Technical Consultant helping teams build scalable, maintainable systems that run smooth like well oiled machines.",
+    "cta": {
+      "primary": "Work With Me",
+      "secondary": "Learn More"
+    },
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "label": "Years Experience"
+      },
+      "projects": {
+        "number": "50+",
+        "label": "Projects Delivered"
+      },
+      "teams": {
+        "number": "20+",
+        "label": "Teams Mentored"
+      }
+    }
+  },
+  "valueProposition": {
+    "title": "Engineering",
+    "titleAccent": "Excellence",
+    "description1": "I optimize the entire value stream—from executive strategy to user-facing features—reducing cycle time and maximizing business impact.",
+    "description2": "My approach combines deep technical expertise with a strong focus on team dynamics, developer experience, and sustainable engineering practices.",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "AWS",
+      "System Design",
+      "Team Leadership"
+    ],
+    "items": {
+      "technicalDepth": {
+        "title": "Technical Depth",
+        "description": "From system architecture to code review, I bring hands-on expertise to every engagement."
+      },
+      "teamFocus": {
+        "title": "Team Focus",
+        "description": "Building high-performing teams through mentorship, clear processes, and psychological safety."
+      },
+      "strategicThinking": {
+        "title": "Strategic Thinking",
+        "description": "Aligning technical decisions with business goals for maximum impact."
+      }
+    }
+  },
+  "services": {
+    "title": "How I Can",
+    "titleAccent": "Help",
+    "description": "Flexible engagement models designed to meet your organization where it is.",
+    "mostPopular": "Most Popular",
+    "freeHealthCheck": "Take the free Engineering Health Check",
+    "items": {
+      "retainer": {
+        "title": "Technical Leadership Retainer",
+        "description": "Ongoing technical guidance for your team. Weekly check-ins, architecture reviews, and strategic planning.",
+        "features": [
+          "Weekly 1:1 sessions",
+          "Architecture reviews",
+          "Team mentoring",
+          "Technical roadmap planning"
+        ]
+      },
+      "healthCheck": {
+        "title": "Engineering Health Check",
+        "description": "Comprehensive assessment of your engineering organization's processes, practices, and culture.",
+        "features": [
+          "Team interviews",
+          "Process analysis",
+          "Tech debt assessment",
+          "Actionable recommendations"
+        ]
+      },
+      "fractionalCto": {
+        "title": "Fractional CTO",
+        "description": "Part-time technical leadership for startups and scale-ups. All the expertise, flexible commitment.",
+        "features": [
+          "Strategic planning",
+          "Hiring support",
+          "Vendor management",
+          "Board presentations"
+        ]
+      }
+    }
+  },
+  "techExpertise": {
+    "title": "Technical",
+    "titleAccent": "Expertise",
+    "description": "A decade of building across the full stack, from pixel-perfect UIs to distributed systems.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "techs": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind CSS",
+          "React Native"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "techs": ["Node.js", "Python", "PostgreSQL", "Redis", "GraphQL"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "techs": ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD"]
+      },
+      "architecture": {
+        "title": "Architecture",
+        "techs": [
+          "Microservices",
+          "Event-Driven",
+          "DDD",
+          "System Design",
+          "API Design"
+        ]
+      },
+      "practices": {
+        "title": "Practices",
+        "techs": ["TDD", "Code Review", "Agile", "DevEx", "Documentation"]
+      },
+      "leadership": {
+        "title": "Leadership",
+        "techs": [
+          "Team Building",
+          "Mentoring",
+          "Hiring",
+          "Process Design",
+          "Strategy"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Career",
+    "titleAccent": "Highlights",
+    "description": "From startup to enterprise, I've delivered impact across diverse environments and challenges.",
+    "downloadCv": "Download Full CV",
+    "items": {
+      "lead": {
+        "role": "Lead Fullstack Engineer",
+        "company": "Enterprise Scale-Up",
+        "period": "Recent",
+        "achievements": [
+          "Led migration from monolith to microservices architecture",
+          "Built and mentored a team of 8 engineers",
+          "Reduced deployment time by 70% through CI/CD improvements"
+        ]
+      },
+      "senior": {
+        "role": "Senior Software Engineer",
+        "company": "High-Growth Startup",
+        "period": "Previous",
+        "achievements": [
+          "Architected real-time data pipeline processing 1M+ events/day",
+          "Established engineering best practices and documentation culture",
+          "Shipped product features that increased user engagement by 40%"
+        ]
+      }
+    }
+  },
+  "thoughts": {
+    "title": "Latest",
+    "titleAccent": "Thoughts",
+    "description": "Essays on technology, leadership, and building better software.",
+    "viewAll": "View All Essays",
+    "posts": {
+      "aiNarrative": {
+        "title": "The winning AI narrative.",
+        "excerpt": "Exploring how the narrative around AI is shaping our reality.",
+        "category": "Technology",
+        "date": "Dec 3, 2025"
+      },
+      "modelSelection": {
+        "title": "What model for which task?",
+        "excerpt": "Exploring the importance of choosing the right model for the right task.",
+        "category": "Technology",
+        "date": "Dec 3, 2025"
+      }
+    }
+  },
+  "cta": {
+    "title1": "Let's Build",
+    "title2": "Something Great",
+    "description": "Whether you need technical leadership, want to improve your engineering processes, or have a challenging project—I'd love to hear from you.",
+    "getInTouch": "Get in Touch",
+    "freeHealthCheck": "Free Health Check"
+  }
+}

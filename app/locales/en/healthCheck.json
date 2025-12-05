@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Engineering Organization Health Check | Free Assessment",
+    "description": "Diagnose your engineering team's performance in 15 minutes. Get a personalized PDF report with actionable insights on velocity, technical debt, and DevOps maturity."
+  },
+  "badge": "Free Assessment",
+  "hero": {
+    "title1": "Tech Team",
+    "title2": "Health Check"
+  },
+  "subtitle": "Diagnose your engineering team's performance in <accent>15 minutes</accent>. Get a personalized PDF report with actionable insights within 48 hours.",
+  "timeIndicators": {
+    "questionnaire": "15 min questionnaire",
+    "pdfReport": "Custom PDF Report",
+    "quickWins": "3-5 Quick Wins"
+  },
+  "cta": {
+    "startAssessment": "Start Free Assessment",
+    "howItWorks": "How It Works"
+  },
+  "socialProof": "Trusted by <strong>50+ CTOs</strong> and Engineering Leaders",
+  "card": {
+    "title": "What You'll Get",
+    "footer": "Plus personalized recommendations"
+  },
+  "features": {
+    "velocity": "Team Velocity Scoring",
+    "techDebt": "Technical Debt Assessment",
+    "hiring": "Hiring & Retention Analysis",
+    "architecture": "Architecture Scalability",
+    "devops": "DevOps Maturity Evaluation"
+  },
+  "floatingStats": {
+    "delivery": {
+      "value": "48h",
+      "label": "Report Delivery"
+    },
+    "free": {
+      "value": "Free",
+      "label": "No Card Required"
+    }
+  },
+  "steps": {
+    "step1": "Take Assessment",
+    "step2": "Get Your Score",
+    "step3": "Receive Report",
+    "step4": "Book Strategy Call"
+  }
+}

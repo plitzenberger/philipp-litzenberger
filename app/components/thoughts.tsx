@@ -1,25 +1,20 @@
-export function Thoughts() {
-  const posts = [
-    {
-      title: "The Future of AI in Business",
-      excerpt: "Exploring how artificial intelligence is reshaping industries.",
-      category: "Technology",
-      date: "Nov 15, 2025",
-    },
-    {
-      title: "Philosophy of Technical Debt",
-      excerpt: "Why technical debt matters more than we think.",
-      category: "Philosophy",
-      date: "Nov 10, 2025",
-    },
-    {
-      title: "Rethinking Scalability",
-      excerpt: "Moving beyond metrics to understand true scalability.",
-      category: "Tech Criticism",
-      date: "Nov 5, 2025",
-    },
-  ];
+const posts = [
+  {
+    title: "The winning AI narrative.",
+    excerpt: "Exploring how the narrative around AI is shaping our reality.",
+    category: "Technology",
+    date: "Dec 3, 2025",
+  },
+  {
+    title: "What model for which task?",
+    excerpt:
+      "Exploring the importance of choosing the right model for the right task.",
+    category: "Technology",
+    date: "Dec 3, 2025",
+  },
+];
 
+export function Thoughts() {
   return (
     <section id="thoughts" className="py-32 px-6 md:px-12 scroll-mt-24">
       <div className="max-w-7xl mx-auto">

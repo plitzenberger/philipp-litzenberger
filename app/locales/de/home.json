@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Philipp Litzenberger | Lead Fullstack Engineer & Technischer Berater",
+    "description": "Senior Technical Leader mit über 10 Jahren Erfahrung im Aufbau skalierbarer Systeme. Spezialisiert auf Fullstack-Entwicklung, Teamführung und Engineering-Organisationsgesundheit."
+  },
+  "hero": {
+    "badge": "Verfügbar für Beratung",
+    "firstName": "Philipp",
+    "lastName": "Litzenberger",
+    "subtitle": "Lead Fullstack Engineer & Technischer Berater, der Teams hilft, skalierbare, wartbare Systeme zu bauen, die wie gut geölte Maschinen laufen.",
+    "cta": {
+      "primary": "Zusammenarbeiten",
+      "secondary": "Mehr erfahren"
+    },
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "label": "Jahre Erfahrung"
+      },
+      "projects": {
+        "number": "50+",
+        "label": "Projekte umgesetzt"
+      },
+      "teams": {
+        "number": "20+",
+        "label": "Teams betreut"
+      }
+    }
+  },
+  "valueProposition": {
+    "title": "Engineering",
+    "titleAccent": "Exzellenz",
+    "description1": "Ich optimiere den gesamten Wertstrom—von der Führungsstrategie bis zu nutzerorientierten Features—reduziere die Durchlaufzeit und maximiere die Geschäftswirkung.",
+    "description2": "Mein Ansatz kombiniert tiefes technisches Fachwissen mit einem starken Fokus auf Teamdynamik, Developer Experience und nachhaltige Engineering-Praktiken.",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "AWS",
+      "Systemdesign",
+      "Teamführung"
+    ],
+    "items": {
+      "technicalDepth": {
+        "title": "Technische Tiefe",
+        "description": "Von Systemarchitektur bis Code Review bringe ich praktische Expertise in jedes Engagement ein."
+      },
+      "teamFocus": {
+        "title": "Team-Fokus",
+        "description": "Aufbau leistungsstarker Teams durch Mentoring, klare Prozesse und psychologische Sicherheit."
+      },
+      "strategicThinking": {
+        "title": "Strategisches Denken",
+        "description": "Abstimmung technischer Entscheidungen mit Geschäftszielen für maximale Wirkung."
+      }
+    }
+  },
+  "services": {
+    "title": "Wie ich",
+    "titleAccent": "helfen kann",
+    "description": "Flexible Engagement-Modelle, die Ihre Organisation dort abholen, wo sie steht.",
+    "mostPopular": "Am beliebtesten",
+    "freeHealthCheck": "Kostenloser Engineering Health Check",
+    "items": {
+      "retainer": {
+        "title": "Technical Leadership Retainer",
+        "description": "Laufende technische Beratung für Ihr Team. Wöchentliche Check-ins, Architektur-Reviews und strategische Planung.",
+        "features": [
+          "Wöchentliche 1:1-Sitzungen",
+          "Architektur-Reviews",
+          "Team-Mentoring",
+          "Technische Roadmap-Planung"
+        ]
+      },
+      "healthCheck": {
+        "title": "Engineering Health Check",
+        "description": "Umfassende Bewertung der Prozesse, Praktiken und Kultur Ihrer Engineering-Organisation.",
+        "features": [
+          "Team-Interviews",
+          "Prozessanalyse",
+          "Tech-Debt-Bewertung",
+          "Umsetzbare Empfehlungen"
+        ]
+      },
+      "fractionalCto": {
+        "title": "Fractional CTO",
+        "description": "Teilzeit-technische Führung für Startups und Scale-ups. Die gesamte Expertise, flexibles Engagement.",
+        "features": [
+          "Strategische Planung",
+          "Recruiting-Unterstützung",
+          "Vendor-Management",
+          "Board-Präsentationen"
+        ]
+      }
+    }
+  },
+  "techExpertise": {
+    "title": "Technische",
+    "titleAccent": "Expertise",
+    "description": "Ein Jahrzehnt Entwicklung über den gesamten Stack, von pixelgenauen UIs bis zu verteilten Systemen.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "techs": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind CSS",
+          "React Native"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "techs": ["Node.js", "Python", "PostgreSQL", "Redis", "GraphQL"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "techs": ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD"]
+      },
+      "architecture": {
+        "title": "Architektur",
+        "techs": [
+          "Microservices",
+          "Event-Driven",
+          "DDD",
+          "Systemdesign",
+          "API-Design"
+        ]
+      },
+      "practices": {
+        "title": "Praktiken",
+        "techs": ["TDD", "Code Review", "Agile", "DevEx", "Dokumentation"]
+      },
+      "leadership": {
+        "title": "Führung",
+        "techs": [
+          "Teamaufbau",
+          "Mentoring",
+          "Recruiting",
+          "Prozessdesign",
+          "Strategie"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Karriere",
+    "titleAccent": "Highlights",
+    "description": "Vom Startup bis zum Enterprise habe ich in verschiedenen Umgebungen und Herausforderungen Wirkung erzielt.",
+    "downloadCv": "Vollständigen Lebenslauf herunterladen",
+    "items": {
+      "lead": {
+        "role": "Lead Fullstack Engineer",
+        "company": "Enterprise Scale-Up",
+        "period": "Aktuell",
+        "achievements": [
+          "Migration von Monolith zu Microservices-Architektur geleitet",
+          "Team von 8 Ingenieuren aufgebaut und betreut",
+          "Deployment-Zeit durch CI/CD-Verbesserungen um 70% reduziert"
+        ]
+      },
+      "senior": {
+        "role": "Senior Software Engineer",
+        "company": "High-Growth Startup",
+        "period": "Vorher",
+        "achievements": [
+          "Echtzeit-Datenpipeline für 1M+ Events/Tag architektiert",
+          "Engineering Best Practices und Dokumentationskultur etabliert",
+          "Produktfeatures geliefert, die User-Engagement um 40% steigerten"
+        ]
+      }
+    }
+  },
+  "thoughts": {
+    "title": "Neueste",
+    "titleAccent": "Gedanken",
+    "description": "Essays über Technologie, Führung und bessere Softwareentwicklung.",
+    "viewAll": "Alle Essays ansehen",
+    "posts": {
+      "aiNarrative": {
+        "title": "Das siegreiche KI-Narrativ.",
+        "excerpt": "Wie das Narrativ rund um KI unsere Realität formt.",
+        "category": "Technologie",
+        "date": "3. Dez. 2025"
+      },
+      "modelSelection": {
+        "title": "Welches Modell für welche Aufgabe?",
+        "excerpt": "Die Bedeutung der Wahl des richtigen Modells für die richtige Aufgabe.",
+        "category": "Technologie",
+        "date": "3. Dez. 2025"
+      }
+    }
+  },
+  "cta": {
+    "title1": "Lass uns",
+    "title2": "Großartiges bauen",
+    "description": "Ob Sie technische Führung benötigen, Ihre Engineering-Prozesse verbessern möchten oder ein herausforderndes Projekt haben—ich freue mich von Ihnen zu hören.",
+    "getInTouch": "Kontakt aufnehmen",
+    "freeHealthCheck": "Kostenloser Health Check"
+  }
+}

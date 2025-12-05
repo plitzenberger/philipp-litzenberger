@@ -5,12 +5,22 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useMatches,
 } from "react-router";
 import { ThemeProvider } from "next-themes";
+import { I18nextProvider } from "react-i18next";
 
 import type { Route } from "./+types/root";
-import { Header } from "./components/header";
+import {
+  initI18n,
+  defaultLanguage,
+  isValidLanguage,
+  type SupportedLanguage,
+} from "./lib/i18n";
 import "./app.css";
+
+// Initialize i18next
+const i18n = initI18n();
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -58,9 +68,28 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+function useLocaleFromUrl(): SupportedLanguage {
+  const matches = useMatches();
+  // Find the route match that has a locale param
+  for (const match of matches) {
+    const locale = (match.params as { locale?: string }).locale;
+    if (locale && isValidLanguage(locale)) {
+      return locale;
+    }
+  }
+  return defaultLanguage;
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const locale = useLocaleFromUrl();
+
+  // Update i18n language when locale changes
+  if (i18n.language !== locale) {
+    i18n.changeLanguage(locale);
+  }
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,9 +98,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+        <I18nextProvider i18n={i18n}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
+        </I18nextProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -80,12 +111,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return (
-    <>
-      <Header />
-      <Outlet />
-    </>
-  );
+  return <Outlet />;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
