@@ -1,8 +1,11 @@
-import { Link } from "react-router";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import clsx from "clsx";
+import { LocalizedLink } from "~/lib/localizedLink";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Header() {
+  const { t } = useTranslation("common");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,31 +24,32 @@ export function Header() {
       )}
     >
       <nav className="max-w-full px-6 md:px-12 py-6 flex justify-between items-center">
-        <Link
+        <LocalizedLink
           to="/"
           className="font-black text-4xl md:text-5xl hover:text-accent-foreground transition-all duration-200 transform hover:scale-110"
         >
           CE/
-        </Link>
-        <div className="hidden md:flex gap-12 text-lg font-black tracking-tight uppercase">
-          <Link
+        </LocalizedLink>
+        <div className="hidden md:flex items-center gap-12 text-lg font-black tracking-tight uppercase">
+          <LocalizedLink
             to="#about"
             className="hover:text-accent-foreground border-b-3 border-transparent hover:border-accent-border-bright transition-all duration-200 transform hover:scale-110"
           >
-            About
-          </Link>
-          <Link
+            {t("nav.about")}
+          </LocalizedLink>
+          <LocalizedLink
             to="#thoughts"
             className="hover:text-accent-foreground border-b-3 border-transparent hover:border-accent-border-bright transition-all duration-200 transform hover:scale-110"
           >
-            Thoughts
-          </Link>
-          <Link
+            {t("nav.thoughts")}
+          </LocalizedLink>
+          <LocalizedLink
             to="#work"
             className="hover:text-accent-foreground border-b-3 border-transparent hover:border-accent-border-bright transition-all duration-200 transform hover:scale-110"
           >
-            Work
-          </Link>
+            {t("nav.work")}
+          </LocalizedLink>
+          <LanguageSwitcher />
         </div>
       </nav>
     </header>

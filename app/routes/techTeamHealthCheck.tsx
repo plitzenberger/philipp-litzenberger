@@ -1,8 +1,9 @@
 import { Main } from "~/components/main";
 import { HealthCheckHero } from "~/components/health-check-hero";
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/techTeamHealthCheck";
 
 export function meta({}: Route.MetaArgs) {
+  // Note: For SSR meta, we'd need to pass locale through loader
   return [
     { title: "Engineering Organization Health Check | Free Assessment" },
     {

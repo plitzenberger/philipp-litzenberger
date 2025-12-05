@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Engineering Organisation Health Check | Kostenlose Bewertung",
+    "description": "Diagnostizieren Sie die Leistung Ihres Engineering-Teams in 15 Minuten. Erhalten Sie einen personalisierten PDF-Bericht mit umsetzbaren Erkenntnissen zu Velocity, Technical Debt und DevOps-Reife."
+  },
+  "badge": "Kostenlose Bewertung",
+  "hero": {
+    "title1": "Tech Team",
+    "title2": "Health Check"
+  },
+  "subtitle": "Diagnostizieren Sie die Leistung Ihres Engineering-Teams in <accent>15 Minuten</accent>. Erhalten Sie einen personalisierten PDF-Bericht mit umsetzbaren Erkenntnissen innerhalb von 48 Stunden.",
+  "timeIndicators": {
+    "questionnaire": "15 Min. Fragebogen",
+    "pdfReport": "Individueller PDF-Bericht",
+    "quickWins": "3-5 Quick Wins"
+  },
+  "cta": {
+    "startAssessment": "Kostenlose Bewertung starten",
+    "howItWorks": "So funktioniert's"
+  },
+  "socialProof": "Vertraut von <strong>50+ CTOs</strong> und Engineering-Führungskräften",
+  "card": {
+    "title": "Was Sie erhalten",
+    "footer": "Plus personalisierte Empfehlungen"
+  },
+  "features": {
+    "velocity": "Team-Velocity-Bewertung",
+    "techDebt": "Technical-Debt-Analyse",
+    "hiring": "Recruiting & Retention Analyse",
+    "architecture": "Architektur-Skalierbarkeit",
+    "devops": "DevOps-Reifegrad-Bewertung"
+  },
+  "floatingStats": {
+    "delivery": {
+      "value": "48h",
+      "label": "Bericht-Lieferung"
+    },
+    "free": {
+      "value": "Gratis",
+      "label": "Keine Karte erforderlich"
+    }
+  },
+  "steps": {
+    "step1": "Bewertung ausfüllen",
+    "step2": "Score erhalten",
+    "step3": "Bericht empfangen",
+    "step4": "Strategiegespräch buchen"
+  }
+}

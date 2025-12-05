@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "about": "About",
+    "thoughts": "Thoughts",
+    "work": "Work"
+  },
+  "footer": {
+    "letsConnect": "Let's",
+    "connect": "Connect",
+    "description": "Interested in discussing big ideas, collaborating on projects, or just saying hello? Let's create something extraordinary together.",
+    "getInTouch": "Get in touch",
+    "findMe": "Find Me",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© 2025",
+    "brand": "Curious Engineer"
+  },
+  "socials": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "language": {
+    "en": "English",
+    "de": "Deutsch",
+    "switchTo": "Switch language"
+  }
+}
