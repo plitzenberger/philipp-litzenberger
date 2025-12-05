@@ -59,9 +59,9 @@ function HeroSection() {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-interactive opacity-20 rotate-45 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
-          {/* Main content - 3 columns */}
-          <div className="lg:col-span-3">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Main content */}
+          <div>
             <div className="mb-6">
               <span className="inline-block px-4 py-2 text-sm font-black uppercase tracking-widest border-2 border-accent-border-bright text-accent-foreground mb-6">
                 {t("hero.badge")}
@@ -80,7 +80,7 @@ function HeroSection() {
               {t("hero.subtitle")}
             </h2>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <LocalizedLink
                 to="#services"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary-solid text-primary-background font-black text-lg uppercase tracking-wider hover:bg-primary-solid-bright hover:scale-105 transform transition-all duration-200"
@@ -95,11 +95,9 @@ function HeroSection() {
                 {t("hero.cta.secondary")}
               </LocalizedLink>
             </div>
-          </div>
 
-          {/* Stats sidebar - 2 columns */}
-          <div className="lg:col-span-2 border-l-4 border-primary-border-bright pl-8">
-            <div className="space-y-8">
+            {/* Stats row */}
+            <div className="flex flex-wrap gap-8 lg:gap-12 pt-8 border-t-4 border-primary-border">
               <StatItem
                 number={t("hero.stats.experience.number")}
                 label={t("hero.stats.experience.label")}
@@ -112,6 +110,22 @@ function HeroSection() {
                 number={t("hero.stats.teams.number")}
                 label={t("hero.stats.teams.label")}
               />
+            </div>
+          </div>
+
+          {/* Profile Image */}
+          <div className="flex justify-center lg:justify-end order-first lg:order-last">
+            <div className="relative group">
+              {/* Decorative background element */}
+              <div className="absolute -inset-4 bg-accent-interactive opacity-30 rotate-3 transition-transform duration-300 group-hover:rotate-6" />
+              {/* Image container */}
+              <div className="relative border-4 border-primary-border-bright overflow-hidden transition-transform duration-300 group-hover:-rotate-1">
+                <img
+                  src="/profile-image.webp"
+                  alt="Philipp Litzenberger"
+                  className="w-full max-w-xs sm:max-w-sm lg:max-w-md aspect-4/5 grayscale hover:grayscale-0 transition-all duration-500 object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -164,56 +178,37 @@ function ValueProposition() {
       className="py-24 px-6 md:px-12 bg-primary-background-bright scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Profile image and intro - full width on mobile, side by side on larger screens */}
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start mb-16">
-          {/* Profile Image */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-start">
-            <div className="relative group">
-              {/* Decorative background element */}
-              <div className="absolute -inset-3 bg-primary-interactive-bright opacity-30 rotate-3 transition-transform duration-300 group-hover:rotate-6" />
-              {/* Image container */}
-              <div className="relative border-4 border-primary-border-bright overflow-hidden transition-transform duration-300 group-hover:-rotate-1">
-                <img
-                  src="/profile-image.webp"
-                  alt="Philipp Litzenberger"
-                  className="w-full max-w-sm lg:max-w-none aspect-4/5 grayscale object-cover"
-                />
-              </div>
-            </div>
-          </div>
+        {/* About content */}
+        <div className="max-w-3xl mb-16">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-8 -skew-y-2">
+            {t("valueProposition.title")}
+            <br />
+            <span className="text-accent-foreground">
+              {t("valueProposition.titleAccent")}
+            </span>
+          </h2>
+          <p className="text-lg leading-relaxed mb-6">
+            <Trans i18nKey="valueProposition.description1" ns="home">
+              I bridge the gap between{" "}
+              <strong>technical excellence and business value</strong>. With a
+              decade of experience building and leading engineering teams, I
+              help organizations create software that scales—both technically
+              and organizationally.
+            </Trans>
+          </p>
+          <p className="text-lg leading-relaxed mb-8 text-primary-foreground/80">
+            {t("valueProposition.description2")}
+          </p>
 
-          {/* About content */}
-          <div className="lg:col-span-3">
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight mb-8 -skew-y-2">
-              {t("valueProposition.title")}
-              <br />
-              <span className="text-accent-foreground">
-                {t("valueProposition.titleAccent")}
+          <div className="flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 text-sm font-bold border-2 border-primary-border hover:border-accent-border-bright hover:text-accent-foreground transition-colors"
+              >
+                {skill}
               </span>
-            </h2>
-            <p className="text-lg leading-relaxed mb-6">
-              <Trans i18nKey="valueProposition.description1" ns="home">
-                I bridge the gap between{" "}
-                <strong>technical excellence and business value</strong>. With a
-                decade of experience building and leading engineering teams, I
-                help organizations create software that scales—both technically
-                and organizationally.
-              </Trans>
-            </p>
-            <p className="text-lg leading-relaxed mb-8 text-primary-foreground/80">
-              {t("valueProposition.description2")}
-            </p>
-
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 text-sm font-bold border-2 border-primary-border hover:border-accent-border-bright hover:text-accent-foreground transition-colors"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
 
